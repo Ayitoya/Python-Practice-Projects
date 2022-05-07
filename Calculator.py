@@ -1,4 +1,5 @@
 import tkinter as tk
+from turtle import color
 calculation = ""
 def add_to_calculation(symbol):
     global calculation
@@ -60,6 +61,6 @@ btn_close = tk.Button(root, text=")", command=lambda: add_to_calculation(")"), w
 btn_close.grid(row=5, column=3)
 btn_equals = tk.Button(root, text="=", command= evaluate_calculation, width=11, font=("Arial", 14), background=("orange"))
 btn_equals.grid(row=6, column=3, columnspan=2)
-btn_clear = tk.Button(root, text="C", command= clear_field, width=11, font=("Arial", 14))
+btn_clear = tk.Button(root, text="C", command= clear_field, width=11, font=("Arial", 14), background=("light blue"))
 btn_clear.grid(row=6, column=1, columnspan=2)
 root.mainloop()
